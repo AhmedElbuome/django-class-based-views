@@ -8,10 +8,6 @@ def image_upload(instance,filename):
     imagename , extension = filename.split(".")
     return "post/%s.%s"%(instance.id,extension)
 
-    
-    imagename, extension = filename.split('.')
-    
-    return "post/%s.%s"%(instance.id, extension)
 
 class Post(models.Model):
 
